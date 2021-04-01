@@ -23148,12 +23148,14 @@
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "bnk" = (
-/obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 9
 	},
 /turf/open/floor/plasteel/white,
 /area/science/lab)
@@ -23645,6 +23647,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 10
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "boB" = (
@@ -23923,19 +23928,15 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "bpo" = (
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/white/side{
-	dir = 10
-	},
-/area/science/research)
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/science/lab)
 "bpq" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel/white/side{
-	dir = 8
-	},
-/area/science/research)
+/turf/closed/wall,
+/area/science/lab)
 "bps" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 4
@@ -24124,11 +24125,11 @@
 /turf/closed/wall/r_wall,
 /area/science/explab)
 "bqf" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer1,
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "bqi" = (
@@ -24150,18 +24151,6 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/storage)
-"bqk" = (
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 8
-	},
-/turf/open/floor/plasteel/white,
-/area/science/research)
 "bqn" = (
 /obj/machinery/light_switch{
 	pixel_x = 27
@@ -24542,6 +24531,12 @@
 /obj/machinery/door/airlock/research{
 	name = "Experimentation Lab";
 	req_access_txt = "47"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
 	},
 /turf/open/floor/plasteel/white,
 /area/science/explab)
@@ -30435,6 +30430,12 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -46044,10 +46045,15 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/research/glass{
+	name = "R&D Lab";
+	req_access_txt = "7"
+	},
 /turf/open/floor/plasteel/white/side{
 	dir = 10
 	},
-/area/science/research)
+/area/science/lab)
 "dgS" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -54094,6 +54100,10 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+/obj/machinery/door/airlock/research/glass{
+	name = "Research Division";
+	req_access_txt = "47"
+	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "mSf" = (
@@ -56795,6 +56805,12 @@
 /obj/machinery/door/airlock/research{
 	name = "Shuttle dock";
 	req_access_txt = "47"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
 	},
 /turf/open/floor/plasteel/white,
 /area/science/shuttledock)
@@ -60279,6 +60295,10 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+/obj/machinery/door/airlock/research/glass{
+	name = "Research Division";
+	req_access_txt = "47"
+	},
 /turf/open/floor/plasteel/white/side{
 	dir = 9
 	},
@@ -60818,6 +60838,12 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
 /turf/open/floor/plasteel/white,
 /area/science/explab)
 "vGz" = (
@@ -60832,21 +60858,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plating,
 /area/quartermaster/storage)
-"vHo" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "rnd2";
-	name = "research lab shutters"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white/side{
-	dir = 10
-	},
-/area/science/research)
 "vHp" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -61710,6 +61721,12 @@
 /obj/machinery/door/airlock/research{
 	name = "Shuttle dock";
 	req_access_txt = "47"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
 	},
 /turf/open/floor/plasteel/white,
 /area/science/shuttledock)
@@ -110066,7 +110083,7 @@ bgc
 bgc
 bgc
 boB
-vHo
+boB
 mSe
 vid
 dYq
@@ -110323,7 +110340,7 @@ pDJ
 blI
 bnn
 dgS
-bpZ
+boB
 brt
 bta
 lxd
@@ -110580,7 +110597,7 @@ biW
 blK
 bnp
 bng
-bpZ
+bpo
 brt
 bBD
 gLd
@@ -111095,7 +111112,7 @@ bka
 bka
 bnk
 bpo
-bqk
+bth
 bBD
 gLd
 gwd
@@ -111351,7 +111368,7 @@ biW
 blL
 biW
 biW
-bpZ
+boB
 bth
 bBD
 gLd
