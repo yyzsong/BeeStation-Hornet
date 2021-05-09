@@ -376,8 +376,8 @@
 /obj/item/clothing/accessory/holster/detective/Initialize()
 	. = ..()
 	new /obj/item/gun/ballistic/revolver/detective(src)
-	new /obj/item/ammo_box/c38(src)
-	new /obj/item/ammo_box/c38(src)
+	new /obj/item/ammo_box/c38/rubbershot(src)
+	new /obj/item/ammo_box/c38/rubbershot(src)
 
 //Poppy Pin
 /obj/item/clothing/accessory/poppy_pin

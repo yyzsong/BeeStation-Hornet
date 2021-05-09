@@ -16,6 +16,11 @@
 	name = ".38 bullet"
 	damage = 25
 
+/obj/item/projectile/bullet/c38/rubbershot
+	name = ".38 rubbershot bullet"
+	damage = 25
+	damage_type = STAMINA
+
 /obj/item/projectile/bullet/c38/trac
 	name = ".38 TRAC bullet"
 	damage = 10
@@ -27,7 +32,7 @@
 		return
 	if(locate(/obj/item/implant/tracking/c38) in M.implants) //checks if the target already contains a tracking implant
 		return
-	
+
 	var/obj/item/implant/tracking/c38/imp = new (M)
 	imp.implant(M)
 

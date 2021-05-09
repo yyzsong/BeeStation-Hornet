@@ -22,6 +22,12 @@
 	caliber = "38"
 	projectile_type = /obj/item/projectile/bullet/c38
 
+/obj/item/ammo_casing/c38/rubbershot
+	name = ".38 rubbershot bullet casing"
+	desc = "A .38 rubbershot bullet casing."
+	caliber = "38"
+	projectile_type = /obj/item/projectile/bullet/c38/rubbershot
+
 /obj/item/ammo_casing/c38/trac
 	name = ".38 TRAC bullet casing"
 	desc = "A .38 \"TRAC\" bullet casing."
